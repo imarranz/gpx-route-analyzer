@@ -1,7 +1,6 @@
 pandas==2.2.3
 gpxpy==1.6.2
-streamlit=1.48.1
+streamlit==1.48.1
 streamlit-folium==0.25.1
-altair=5.5.0
-folium=0.20.0
-branca=0.8.1
+altair==5.5.0
+folium==0.20.0
