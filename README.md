@@ -1,6 +1,31 @@
  
 # GPX Route Analyzer
 
+<p align="center">
+  <!-- Abre la app en Streamlit -->
+  <a href="https://gpx-route-analyzer.streamlit.app/" target="_blank">
+    <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit">
+  </a>
+  <!-- Autor -->
+  <img src="https://img.shields.io/badge/Autor-Ibon%20Martinez--Aranz-2c7bb6?style=for-the-badge" alt="Autor: Ibon Martinez-Arranz">
+  <!-- Python -->
+  <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.11+">
+  <!-- Licencia -->
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT">
+  <!-- Pandas -->
+  <img src="https://img.shields.io/badge/Pandas-2.2.3-150458?style=for-the-badge" alt="Pandas 2.2.3">
+  <!-- GPXPy -->
+  <img src="https://img.shields.io/badge/GPXPy-1.6.2-0A7FFF?style=for-the-badge" alt="GPXPy 1.6.2">
+  <!-- Streamlit -->
+  <img src="https://img.shields.io/badge/Streamlit-1.48.1-FF4B4B?style=for-the-badge" alt="Streamlit 1.48.1">
+  <!-- streamlit-folium -->
+  <img src="https://img.shields.io/badge/streamlit--folium-0.25.1-2c7bb6?style=for-the-badge" alt="streamlit-folium 0.25.1">
+  <!-- Altair -->
+  <img src="https://img.shields.io/badge/Altair-5.5.0-FF4B4B?style=for-the-badge" alt="Altair 5.5.0">
+  <!-- Folium -->
+  <img src="https://img.shields.io/badge/Folium-0.20.0-77B829?style=for-the-badge" alt="Folium 0.20.0">
+</p>
+
 > Visualiza y analiza archivos **GPX** de ciclismo (y también running/senderismo) con **Streamlit**, **Folium** y **Altair**. Mapas interactivos, métricas automáticas, parciales configurables y gráficas bonitas — todo en tu navegador.
 
 <p align="center">

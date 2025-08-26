@@ -61,8 +61,10 @@ from gpxra.maps import (
 def format_date_es(dt: datetime) -> str:
 
     meses = [
-        "enero","febrero","marzo","abril","mayo","junio",
-        "julio","agosto","septiembre","octubre","noviembre","diciembre"
+        "enero","febrero","marzo",
+        "abril","mayo","junio",
+        "julio","agosto","septiembre",
+        "octubre","noviembre","diciembre"
     ]
     return f"{dt.day} de {meses[dt.month-1]} de {dt.year}"
 
@@ -89,6 +91,41 @@ st.set_page_config(
         # "Get help": "https://…",
         # "Report a bug": "https://…/issues",
         })
+
+APP_URL = "https://gpx-route-analyzer.streamlit.app/"     # opcional
+REPO_URL = "https://github.com/imarranz/gpx-route-analyzer"
+
+st.markdown(f"""
+<div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin: 6px 0 14px 0;">
+  <!-- Autor -->
+  <img src="https://img.shields.io/badge/Autor-Ibon%20Martinez--Arranz-2c7bb6?style=flat-square" alt="Autor: Ibon">
+  <!-- Streamlit -->
+  <a href="{APP_URL}" target="_blank" rel="noopener">
+    <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit" height="20">
+  </a>
+  <!-- Repo -->
+  <a href="{REPO_URL}" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/badge/GitHub-repo-24292e?style=flat-square&logo=github" alt="GitHub">
+  </a>
+  <!-- Python -->
+  <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.11+">
+  <!-- Licencia -->
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT">
+  <!-- Pandas -->
+  <img src="https://img.shields.io/badge/Pandas-2.2.3-150458?style=for-the-badge" alt="Pandas 2.2.3">
+  <!-- GPXPy -->
+  <img src="https://img.shields.io/badge/GPXPy-1.6.2-0A7FFF?style=for-the-badge" alt="GPXPy 1.6.2">
+  <!-- Streamlit -->
+  <img src="https://img.shields.io/badge/Streamlit-1.48.1-FF4B4B?style=for-the-badge" alt="Streamlit 1.48.1">
+  <!-- streamlit-folium -->
+  <img src="https://img.shields.io/badge/streamlit--folium-0.25.1-2c7bb6?style=for-the-badge" alt="streamlit-folium 0.25.1">
+  <!-- Altair -->
+  <img src="https://img.shields.io/badge/Altair-5.5.0-FF4B4B?style=for-the-badge" alt="Altair 5.5.0">
+  <!-- Folium -->
+  <img src="https://img.shields.io/badge/Folium-0.20.0-77B829?style=for-the-badge" alt="Folium 0.20.0">
+</div>
+""", unsafe_allow_html=True)
+
 
 st.title("🚴 GPX Route Analyzer: Rutas de Ciclismo")
 
@@ -385,28 +422,28 @@ def make_summary(metrics):
     )
 
     # Bloque “contexto” combinando reglas (solo añadimos las que aportan)
-    contexto_partes = []
+    contexto_por_partes = []
 
     # Hora
     if frase_hora:
-        contexto_partes.append(frase_hora)
+        contexto_por_partes.append(frase_hora)
     # Distancia + Ritmo
     if frase_dist:
-        contexto_partes.append(frase_dist)
+        contexto_por_partes.append(frase_dist)
     if frase_ritmo:
-        contexto_partes.append(frase_ritmo)
+        contexto_por_partes.append(frase_ritmo)
     # Vmax
     if frase_vmax:
-        contexto_partes.append(frase_vmax)
+        contexto_por_partes.append(frase_vmax)
     # Desnivel
     if frase_desnivel:
-        contexto_partes.append(frase_desnivel)
+        contexto_por_partes.append(frase_desnivel)
     # Fluidez por pausas
     if frase_pausas_ratio:
-        contexto_partes.append(frase_pausas_ratio)
+        contexto_por_partes.append(frase_pausas_ratio)
 
-    if contexto_partes:
-        resumen += "Fue una sesión que combinó esfuerzo y disfrute, " + ", ".join(contexto_partes) + "."
+    if contexto_por_partes:
+        resumen += "Fue una sesión que combinó esfuerzo y disfrute, " + ", ".join(contexto_por_partes) + "."
 
     # Frase final sobre pausa concreta
     resumen += f" Además, estuviste parado {format_time(pausa_s)}, {frase_pausa}"
