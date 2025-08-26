@@ -12,11 +12,11 @@
   <a href="https://github.com/imarranz/gpx-route-analyzer" target="_blank" rel="noopener">
     <img src="https://img.shields.io/badge/GitHub-repository-24292e?style=for-the-badge&logo=github" alt="GitHub">
   </a>
+  <!-- Licencia -->
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT">
   <br><br>
   <!-- Python -->
   <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.11+">
-  <!-- Licencia -->
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT">
   <!-- Pandas -->
   <img src="https://img.shields.io/badge/Pandas-2.2.3-150458?style=for-the-badge" alt="Pandas 2.2.3">
   <!-- GPXPy -->
