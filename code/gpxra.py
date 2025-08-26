@@ -33,7 +33,11 @@ import locale
 # Configuración y Variables
 # ============================================================================================
 
-locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
+try:
+    locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
+except locale.Error:
+    # En Cloud no hay locales instalados: seguimos sin cambiar el locale del sistema
+    pass
 
 # ============================================================================================
 # Utilidades
@@ -48,6 +52,18 @@ from gpxra.maps import (
     draw_route, add_start_end_markers, add_key_point_markers,
     create_layers, _add_marker
 )
+
+# ============================================================================================
+# Funciones
+# ============================================================================================
+
+def format_date_es(dt: datetime) -> str:
+
+    meses = [
+        "enero","febrero","marzo","abril","mayo","junio",
+        "julio","agosto","septiembre","octubre","noviembre","diciembre"
+    ]
+    return f"{dt.day} de {meses[dt.month-1]} de {dt.year}"
 
 # ============================================================================================
 # Streamlit UI
@@ -278,7 +294,8 @@ def make_summary(metrics):
     pausas_ratio = (pausa_s / elapsed_s) if elapsed_s > 0 else 0.0
 
     # Fecha y horas (con fallback por si faltan)
-    date_str = metrics['date'].strftime('%d de %B de %Y') if metrics.get('date') else 'fecha desconocida'
+    #date_str = metrics['date'].strftime('%d de %B de %Y') if metrics.get('date') else 'fecha desconocida'
+    date_str = format_date_es(metrics['date']) if metrics.get('date') else 'fecha desconocida'
     start_str = metrics['start_time'].strftime('%H:%M:%S') if metrics.get('start_time') else '--:--:--'
     end_str   = metrics['end_time'].strftime('%H:%M:%S') if metrics.get('end_time') else '--:--:--'
     start_hour = metrics['start_time'].hour if metrics.get('start_time') else None
@@ -401,7 +418,7 @@ with tab_resumen:
 
     # Métricas en cuadrícula (4 columnas x N filas)
     metrics_items = [
-        ("Fecha", metrics['date'].strftime("%d de %B de %Y")),
+        ("Fecha", format_date_es(metrics['date'])),
         ("Hora inicio", metrics['start_time'].strftime("%H:%M:%S")),
         ("Hora fin", metrics['end_time'].strftime("%H:%M:%S")),
         ("Tiempo total", format_time(metrics['elapsed_time_s'])),
