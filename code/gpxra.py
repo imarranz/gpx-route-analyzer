@@ -28,6 +28,7 @@ from folium.plugins import Draw
 from datetime import datetime, timezone
 from branca.colormap import LinearColormap
 import locale
+import os
 
 # ============================================================================================
 # Configuración y Variables
@@ -750,7 +751,8 @@ with tab_stats:
 with tab_guide:
 
     st.subheader("Guía de uso")
-    guia_path = "GUIA.md"
+    # Construir ruta absoluta al fichero GUIA.md que está junto a gpxra.py
+    guia_path = os.path.join(os.path.dirname(__file__), "GUIA.md")
 
     try:
         with open(guia_path, "r", encoding="utf-8") as f:
