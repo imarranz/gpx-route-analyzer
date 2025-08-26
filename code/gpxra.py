@@ -96,21 +96,21 @@ APP_URL = "https://gpx-route-analyzer.streamlit.app/"     # opcional
 REPO_URL = "https://github.com/imarranz/gpx-route-analyzer"
 
 st.markdown(f"""
-<div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin: 6px 0 14px 0;">
+<div style="display:block; gap:10px; flex-wrap:wrap; align-items:center; margin: 6px 0 14px 0;">
   <!-- Autor -->
-  <img src="https://img.shields.io/badge/Autor-Ibon%20Martinez--Arranz-2c7bb6?style=flat-square" alt="Autor: Ibon Martinez-Arranz">
-  <!-- Streamlit -->
-  <a href="{APP_URL}" target="_blank" rel="noopener">
-      <img src="https://img.shields.io/static/v1?label=Abrir%20en&message=Streamlit&color=FF4B4B&style=for-the-badge&logo=streamlit&logoColor=white" alt="Abrir en Streamlit">
+  <img src="https://img.shields.io/badge/Autor-Ibon%20Martinez--Aranz-2c7bb6?style=for-the-badge" alt="Autor: Ibon Martinez-Arranz">
+  <!-- Abre la app en Streamlit -->
+  <a href="{APP_URL}" target="_blank">
+    <img src="https://img.shields.io/static/v1?label=Abrir%20en&message=Streamlit&color=FF4B4B&style=for-the-badge&logo=streamlit&logoColor=white" alt="Abrir en Streamlit">
   </a>
-  <!-- Repo -->
+  <!-- Repository -->
   <a href="{REPO_URL}" target="_blank" rel="noopener">
-    <img src="https://img.shields.io/badge/GitHub-repo-24292e?style=flat-square&logo=github" alt="GitHub">
-  </a>
+    <img src="https://img.shields.io/badge/GitHub-repository-24292e?style=for-the-badge&logo=github" alt="GitHub">
+  </a><br><br>
   <!-- Python -->
-  <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.11+">
+  <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.11+">
   <!-- Licencia -->
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT">
   <!-- Pandas -->
   <img src="https://img.shields.io/badge/Pandas-2.2.3-150458?style=for-the-badge" alt="Pandas 2.2.3">
   <!-- GPXPy -->

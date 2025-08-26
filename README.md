@@ -2,12 +2,17 @@
 # GPX Route Analyzer
 
 <p align="center">
+  <!-- Autor -->
+  <img src="https://img.shields.io/badge/Autor-Ibon%20Martinez--Aranz-2c7bb6?style=for-the-badge" alt="Autor: Ibon Martinez-Arranz">
   <!-- Abre la app en Streamlit -->
   <a href="https://gpx-route-analyzer.streamlit.app/" target="_blank">
     <img src="https://img.shields.io/static/v1?label=Abrir%20en&message=Streamlit&color=FF4B4B&style=for-the-badge&logo=streamlit&logoColor=white" alt="Abrir en Streamlit">
   </a>
-  <!-- Autor -->
-  <img src="https://img.shields.io/badge/Autor-Ibon%20Martinez--Aranz-2c7bb6?style=for-the-badge" alt="Autor: Ibon Martinez-Arranz">
+  <!-- Repository -->
+  <a href="https://github.com/imarranz/gpx-route-analyzer" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/badge/GitHub-repository-24292e?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+  <br><br>
   <!-- Python -->
   <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.11+">
   <!-- Licencia -->
