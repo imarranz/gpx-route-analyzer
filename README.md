@@ -3,7 +3,7 @@
 
 <p align="center">
   <!-- Autor -->
-  <img src="https://img.shields.io/badge/Autor-Ibon%20Martinez--Aranz-2c7bb6?style=for-the-badge" alt="Autor: Ibon Martinez-Arranz">
+  <img src="https://img.shields.io/badge/Autor-Ibon%20Martinez--Arranz-2c7bb6?style=for-the-badge" alt="Autor: Ibon Martinez-Arranz">
   <!-- Abre la app en Streamlit -->
   <a href="https://gpx-route-analyzer.streamlit.app/" target="_blank">
     <img src="https://img.shields.io/static/v1?label=Abrir%20en&message=Streamlit&color=FF4B4B&style=for-the-badge&logo=streamlit&logoColor=white" alt="Abrir en Streamlit">
