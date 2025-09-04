@@ -31,7 +31,7 @@
   <img src="https://img.shields.io/badge/Folium-0.20.0-77B829?style=for-the-badge" alt="Folium 0.20.0">
 </p>
 
-> Visualiza y analiza archivos **GPX** de ciclismo (y también running/senderismo) con **Streamlit**, **Folium** y **Altair**. Mapas interactivos, métricas automáticas, parciales configurables y gráficas bonitas — todo en tu navegador.
+> Visualiza y analiza tus archivos **GPX** de ciclismo con **Streamlit**, **Folium** y **Altair**. Mapas interactivos, métricas automáticas, parciales configurables y gráficos — todo en tu navegador.
 
 <p align="center">
   <img src="docs/banner_1280x640.png" alt="GPX Route Analyzer banner" width="100%" />
@@ -51,7 +51,7 @@
   * **Marcadores automáticos**: altitud máx/min, velocidad máx, pendiente máx/mín (suavizada), **pausas ≥ N s**.
   * **Flechas del sentido de marcha** y **hitos cada N km** (opcionales).
 
-* **Gráficas Altair**: Altitud (área), Velocidad, Pendiente, HR y Cadencia (si existen), **dispersión Velocidad–Altitud** con correlación.
+* **Gráficas Altair**: Altitud (área), Velocidad, Pendiente, HR y Cadencia (si existen).
 * **Colores y estilos**: selector de color para todas las gráficas, grosor de línea, rango de color robusto (P2–P98) para evitar outliers.
 * **Descargar datos**: botón para **descargar CSV** de los puntos procesados y **CSV de parciales**.
 * **Guía integrada**: pestaña **Guía** renderiza el fichero `GUIA.md`.
@@ -60,13 +60,23 @@
 
 ## 🖥️ Demo rápida
 
+Ejecuta la aplicación **en local** con el comando de abajo. En unos segundos se abrirá en tu navegador (normalmente en `http://localhost:8501`). No requiere configuración adicional: sube uno o varios ficheros .gpx y explora las pestañas **Resumen**, **Mapa**, **Estadísticas** y **Guía**.
+
 ```bash
 streamlit run gpxra.py
 ```
 
-Abre el navegador (normalmente en `http://localhost:8501`), sube uno o más `.gpx` y explora las pestañas **Resumen**, **Mapa**, **Estadísticas** y **Guía**.
-
 ---
+
+## ☁️ Disponible en Streamlit Community Cloud
+
+La app está desplegada en **Streamlit Community Cloud**. Puedes usarla online sin configuración previa: sube uno o varios ficheros **.gpx** y explora el resumen, el mapa y las estadísticas.
+
+<p align="center">
+  <a href="https://gpx-route-analyzer.streamlit.app/" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/static/v1?label=Abrir%20en&message=Streamlit&color=FF4B4B&style=for-the-badge&logo=streamlit&logoColor=white" alt="Abrir en Streamlit">
+  </a>
+</p>
 
 ## 📦 Instalación
 
