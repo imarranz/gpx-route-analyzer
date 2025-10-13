@@ -34,7 +34,7 @@
 > Visualiza y analiza tus archivos **GPX** de ciclismo con **Streamlit**, **Folium** y **Altair**. Mapas interactivos, métricas automáticas, parciales configurables y gráficos — todo en tu navegador.
 
 <p align="center">
-  <img src="docs/banner_1280x640.png" alt="GPX Route Analyzer banner" width="100%" />
+  <img src="https://repository-images.githubusercontent.com/1044873103/cf190b7c-5554-4f9e-810a-69d0ed3fa11a" alt="GPX Route Analyzer banner" width="100%" />
 </p>
 
 ---
@@ -188,31 +188,19 @@ pip install streamlit-folium
 
 ## 🤝 Contribuir
 
-¡Las PRs son bienvenidas! Ideas útiles:
-
-* Detección de **puertos** y laps automáticos.
-* Comparador de rutas / ghost racer.
-* Exportación a **PDF** y **PNG** de gráficas.
-* Soporte de **potencia** (watts) cuando el GPX/TCX lo incluya.
-
-Pasos:
-
-1. Haz un fork y crea una rama (`feat/mi-idea`).
-2. Asegura estilo y tipados (opcional): `ruff`, `black`, `mypy`.
-3. Añade ejemplos/GPX de prueba si hace falta.
-4. Abre tu PR con una descripción clara.
+¡Agradezco las mejoras, correcciones de errores y contribuciones! Consulta el archivo `CONTRIBUTING.md` para conocer las pautas.
 
 ---
 
 ## 📜 Licencia
 
-Este proyecto se publica bajo licencia **MIT**. Consulta el fichero `LICENSE`.
+Este proyecto se publica bajo licencia **MIT**. Consulta el fichero `LICENSE.md`.
 
 ---
 
 ## 🗺️ Roadmap
 
-* Exportación **PDF** (1 hoja: resumen + mapa + figuras).
+* Exportar ruta a **PDF** (1 hoja: resumen + mapa + figuras).
 * Detección de **climbs/puertos** (pendiente y duración) y resaltado en mapa.
 * Comparativa entre actividades y “replay”.
 * Más mapas base: OpenTopoMap / Hillshade.
